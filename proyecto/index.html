@@ -2,27 +2,27 @@
 <html lang="es">
 <head>
   <title>Learn&Choice</title>
-  <link rel="stylesheet" href="estilo_index.css">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-<!-- ══ NAV ══ -->
+<!-- navegacion-->
 <nav>
   <div class="nav-logo">Learn&amp;Choice</div>
   <ul class="nav-links">
     <li><a onclick="ir('home')"          id="nl-home"          class="active">Inicio</a></li>
     <li><a onclick="ir('estudiantes')"   id="nl-estudiantes">Estudiantes</a></li>
-    <li><a onclick="ir('programas')"     id="nl-programas">Programas</a></li>
+    <li><a onclick="ir('programas')"     id="nl-programas">Programas academicos</a></li>
     <li><a onclick="ir('inscripciones')" id="nl-inscripciones">Inscripciones</a></li>
     <li><a onclick="ir('historial')"     id="nl-historial">Historial</a></li>
   </ul>
   <div class="nav-right">
     <button class="btn-outline-green" onclick="ir('estudiantes')">Registrarse estudiante</button>
-    <button class="btn-green"         onclick="ir('programas')">Registrarse</button>
+    <button class="btn-green"         onclick="ir('programas')">programas academicos</button>
   </div>
 </nav>
 
-<!-- ══ HOME ══ -->
+<!-- apartado principal -->
 <section id="page-home">
   <h1>Sistema de gestión de matrículas académicas</h1>
   <div class="hero-text">
@@ -35,7 +35,7 @@
   </div>
 </section>
 
-<!-- ══ ESTUDIANTES ══ -->
+<!-- categoria estudiantes -->
 <div class="page" id="page-estudiantes">
   <div class="page-header">
     <h2>Gestión de <span>Estudiantes</span></h2>
@@ -47,7 +47,7 @@
   <div class="cards-grid" id="grid-est"></div>
 </div>
 
-<!-- ══ PROGRAMAS ══ -->
+<!-- categoria de programas-->
 <div class="page" id="page-programas">
   <div class="page-header">
     <h2>Programas <span>Académicos</span></h2>
@@ -59,7 +59,7 @@
   <div class="cards-grid" id="grid-prog"></div>
 </div>
 
-<!-- ══ INSCRIPCIONES ══ -->
+<!-- cartegoria de inscripciones -->
 <div class="page" id="page-inscripciones">
   <div class="page-header">
     <h2>Inscripción de <span>Asignaturas</span></h2>
@@ -74,7 +74,7 @@
   <div class="cards-grid" id="grid-ins"></div>
 </div>
 
-<!-- ══ HISTORIAL ══ -->
+<!-- categoria del historial  -->
 <div class="page" id="page-historial">
   <div class="page-header">
     <h2>Historial <span>Académico</span></h2>
@@ -89,7 +89,7 @@
   <div id="hist-contenido"></div>
 </div>
 
-<!-- ══ FOOTER ══ -->
+<!-- parte inferior de la pagina -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
@@ -110,19 +110,23 @@
       <p>Teléfono: 321 8633567</p>
     </div>
     <div class="footer-col">
-      <h4>Descargar la App</h4>
+      <h4>navega por nuestro sitio web</h4>
       <a href="#" class="app-btn">
         <span class="app-icon"><img src="logo google.png" height="20" onerror="this.style.display='none'"/></span>
-        <div class="app-text"><span>Get it on</span><strong>Google Play</strong></div>
+        <div class="app-text"><span>navegador</span><img src="/imagenes/logo google.png" height="15"/><strong>  Google</strong></div>
       </a>
       <a href="#" class="app-btn">
         <span class="app-icon"><img src="Logo apple.png" height="20" onerror="this.style.display='none'"/></span>
-        <div class="app-text"><span>Download on the</span><strong>App Store</strong></div>
+        <div class="app-text"><span>navegador</span><img src="/imagenes/logo brave.png" height="15"/><strong>  Brave</strong></div>
+      </a>
+            <a href="#" class="app-btn">
+        <span class="app-icon"><img src="Logo apple.png" height="20" onerror="this.style.display='none'"/></span>
+        <div class="app-text"><span>navegador</span><img src="/imagenes/logo edge.jpg" height="15"/><strong>  Edge</strong></div>
       </a>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© Copyright 2026, Learn&amp;Choice</p>
+    <p>© Copyright 2026, Learn & amp;Choice</p>
     <div class="footer-social">
       <a href="#"><img src="logo windos.png" height="18" onerror="this.style.display='none'"/></a>
       <a href="#"><img src="Logo apple.png"  height="18" onerror="this.style.display='none'"/></a>
@@ -131,7 +135,7 @@
   </div>
 </footer>
 
-<!-- ══ MODAL: Registrar Estudiante ══ -->
+<!-- registro de estudiante modelo -->
 <div class="modal-overlay" id="m-est">
   <div class="modal">
     <div class="modal-head">
@@ -165,7 +169,7 @@
   </div>
 </div>
 
-<!-- -->
+<!-- registro de programas modelo -->
 <div class="modal-overlay" id="m-prog">
   <div class="modal">
     <div class="modal-head">
@@ -187,7 +191,7 @@
   </div>
 </div>
 
-<!-- inscripciones -->
+<!-- categoria de inscripciones de asignaturas-->
 <div class="modal-overlay" id="m-ins">
   <div class="modal">
     <div class="modal-head">
@@ -217,6 +221,6 @@
 
 <div class="toast" id="toast"></div>
 
-<script src="interaccion.js"></script>
+<script src="funcion.js"></script>
 </body>
 </html>
